@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+    <!-- HTTP 1.1 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- HTTP 1.0 -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <!-- Prevent caching at the proxy server -->
+    <meta http-equiv="expires" content="0">
+    <title>爱卡汽车OA系统</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/master-index.css"/>
+</head>
+<body>
+          <div id="header">
+              <div class="app-header">
+                  <a href="./index.html" class="fz22 logo-link tcenter">爱卡OA系统</a>
+                  <div class="nav">
+                      <ul>
+                          <li>
+                              <a href="./index.html" class="li_a">返回首页</a>
+                          </li>
+                          <li class="user-name">
+                              <a href="javascript:avoid(0)" class="li_a"><span class="person_name"></span><i class="user-pic"></i></a>
+                              <div class="my-system-menu">
+                                  <div class="my-system-posi"></div>
+                                  <a href="./modifyPassWord.html"><i class="sp-menu-hd3"></i>密码修改</a>
+                                  <a href="./login.html"><i class="sp-menu-hd5"></i>退出</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div id="set-cont">
+              <div class="set-menu fl">
+                  <div class="header-menu">
+                      <p class="fz16 cs">自定义菜单</p>
+                      <span></span>
+                  </div>
+                  <div>
+                      <ul id="js_left_menu" class="set-menu-ul">
+                          <!--<li class="true">-->
+                          <!--<a href="setcenter/corp-baseinfo" class="fz20 left-header"><i class="pic pic_14"></i>系统管理</a>-->
+                          <!--<ul class="menu-ul-ul">-->
+                          <!--<li class="first-li">-->
+                          <!--<span class="button top_docu switch"></span><a class="true" href="setcenter/corp-baseinfo">公司管理</a>-->
+                          <!--</li>-->
+                          <!--<li>-->
+                          <!--<span class="button center_docu switch"></span><a class="false" href="setcenter/statisic">工作地管理</a>-->
+                          <!--</li>-->
+                          <!--<li>-->
+                          <!--<span class="button center_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/pubcontacts">部门管理</a>-->
+                          <!--</li>-->
+                          <!--<li>-->
+                          <!--<span class="button center_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/pubcontacts">职位管理</a>-->
+                          <!--</li>-->
+                          <!--<li>-->
+                          <!--<span class="button center_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/pubcontacts">大区管理</a>-->
+                          <!--</li>-->
+                          <!--<li class="last-li">-->
+                          <!--<span class="button bottom_docu switch"></span><a class="false" href="setcenter/uplogin">分组管理</a>-->
+                          <!--</li>-->
+                          <!--</ul>-->
+                          <!--</li>-->
+                          <!--<li class="false">-->
+                          <!--<a href="setcenter/orgperson" class="fz20 left-header"><i class="pic pic_14"></i>用户和角色</a>-->
+                          <!--<ul class="menu-ul-ul">-->
+                          <!--<li class="first-li"><span class="button top_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/orgperson">用户管理</a>-->
+                          <!--</li>-->
+                          <!--<li class="last-li"><span class="button bottom_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/per-quit">角色管理</a>-->
+                          <!--</li>-->
+                          <!--</ul>-->
+                          <!--</li>-->
+                          <!--<li class="false">-->
+                          <!--<a href="setcenter/report-relation" class="fz20 left-header"><i class="pic pic_14"></i>流程管理</a>-->
+                          <!--<ul class="menu-ul-ul">-->
+                          <!--<li class="first-li"><span class="button top_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/report-relation">流程管理设置</a>-->
+                          <!--</li>-->
+                          <!--<li><span class="button center_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/report-relation">流程表单设置</a>-->
+                          <!--</li>-->
+                          <!--<li class="last-li"><span class="button bottom_docu switch"></span><a class="false"-->
+                          <!--href="setcenter/special-relation">审批流程管理</a>-->
+                          <!--</li>-->
+                          <!--</ul>-->
+                          <!--</li>-->
+                          <!--<li class="true ex">-->
+                          <!--<a href="javascript:void(0)" class="fz20 left-header first_A"><i class="pic pic_14"></i>流程中心</a>-->
+                          <!--<ul class="menu-ul-ul">-->
+                          <!--<li class="first-li"><span class="button top_docu switch"></span><a class="true"-->
+                          <!--href="./index.html">发起申请</a>-->
+                          <!--</li>-->
+                          <!--<li><span class="button center_docu switch"></span><a class="false" href="./myApplication.html">我的申请</a>-->
+                          <!--</li>-->
+                          <!--<li><span class="button center_docu switch"></span><a class="false" href="./myShenPi.html">待审批</a>-->
+                          <!--</li>-->
+                          <!--<li class="last-li"><span class="button bottom_docu switch"></span><a class="false" href="./cwSP.html">已审批</a>-->
+                          <!--</li>-->
+                          <!--</ul>-->
+                          <!--</li>-->
+                      </ul>
+                  </div>
+              </div>
+              <div class="set-page">
+                  <div class="page-cont">
+                      <div class="set-page-mbx">
+                          <span class="set-page-title">当前位置：首页<span style="font-family: 'microsoft yahei'">&nbsp;>&nbsp;</span>发起申请</span>
+                      </div>
+                      <div>
+                          <span class="pass-name">发起申请</span>
+                      </div>
+                      <div class="set-block">
+                          <div class="line-one">
+                              <div class="set-block-div">
+                                  <table class="set-table" cellSpacing=0 >
+                                      <thead>
+                                      <tr>
+                                          <th colspan="2">
+                                              <h3><a href="#">财务类（1）</a></h3>
+                                          </th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                          <td>
+                                              <a href="./Rtj_application.html?root=index.html">报销申请</a>
+                                          </td>
+                                          <td>
+                                              <a href="#"></a>
+                                          </td>
+                                      </tr>
+                                      <!--<tr>-->
+                                      <!--<td>-->
+                                      <!--<a href="#">异常考勤申请</a>-->
+                                      <!--</td>-->
+                                      <!--<td>-->
+                                      <!--<a href="#">调薪申请</a>-->
+                                      <!--</td>-->
+                                      <!--</tr>-->
+                                      <!--<tr>-->
+                                      <!--<td>-->
+                                      <!--<a href="#">加班申请</a>-->
+                                      <!--</td>-->
+                                      <!--<td>-->
+                                      <!--<a href="#">转正申请</a>-->
+                                      <!--</td>-->
+                                      <!--</tr>-->
+                                      <!--<tr>-->
+                                      <!--<td>-->
+                                      <!--<a href="#">请假申请</a>-->
+                                      <!--</td>-->
+                                      <!--</tr>-->
+                                      </tbody>
+                                  </table>
+                              </div>
+                              <!--<div class="set-block-div">-->
+                              <!--<table class="set-table" cellSpacing=0 >-->
+                              <!--<thead>-->
+                              <!--<tr>-->
+                              <!--<th colspan="2">-->
+                              <!--<h3><a href="#">人事类（7）</a></h3>-->
+                              <!--</th>-->
+                              <!--</tr>-->
+                              <!--</thead>-->
+                              <!--<tbody>-->
+                              <!--<tr>-->
+                              <!--<td>-->
+                              <!--<a href="#">离职申请</a>-->
+                              <!--</td>-->
+                              <!--<td>-->
+                              <!--<a href="#">调岗申请</a>-->
+                              <!--</td>-->
+                              <!--</tr>-->
+                              <!--<tr>-->
+                              <!--<td>-->
+                              <!--<a href="#">异常考勤申请</a>-->
+                              <!--</td>-->
+                              <!--<td>-->
+                              <!--<a href="#">调薪申请</a>-->
+                              <!--</td>-->
+                              <!--</tr>-->
+                              <!--<tr>-->
+                              <!--<td>-->
+                              <!--<a href="#">加班申请</a>-->
+                              <!--</td>-->
+                              <!--<td>-->
+                              <!--<a href="#">转正申请</a>-->
+                              <!--</td>-->
+                              <!--</tr>-->
+                              <!--<tr>-->
+                              <!--<td>-->
+                              <!--<a href="#">请假申请</a>-->
+                              <!--</td>-->
+                              <!--</tr>-->
+                              <!--</tbody>-->
+                              <!--</table>-->
+                              <!--</div>-->
+                          </div>
+                          <!--<div class="line-one">-->
+                          <!--<div class="set-block-div">-->
+                          <!--<table class="set-table" cellSpacing=0 >-->
+                          <!--<thead>-->
+                          <!--<tr>-->
+                          <!--<th colspan="2">-->
+                          <!--<h3><a href="#">人事类（7）</a></h3>-->
+                          <!--</th>-->
+                          <!--</tr>-->
+                          <!--</thead>-->
+                          <!--<tbody>-->
+                          <!--<tr>-->
+                          <!--<td>-->
+                          <!--<a href="#">离职申请</a>-->
+                          <!--</td>-->
+                          <!--<td>-->
+                          <!--<a href="#">调岗申请</a>-->
+                          <!--</td>-->
+                          <!--</tr>-->
+                          <!--<tr>-->
+                          <!--<td>-->
+                          <!--<a href="#">异常考勤申请</a>-->
+                          <!--</td>-->
+                          <!--<td>-->
+                          <!--<a href="#">调薪申请</a>-->
+                          <!--</td>-->
+                          <!--</tr>-->
+                          <!--<tr>-->
+                          <!--<td>-->
+                          <!--<a href="#">加班申请</a>-->
+                          <!--</td>-->
+                          <!--<td>-->
+                          <!--<a href="#">转正申请</a>-->
+                          <!--</td>-->
+                          <!--</tr>-->
+                          <!--<tr>-->
+                          <!--<td>-->
+                          <!--<a href="#">请假申请</a>-->
+                          <!--</td>-->
+                          <!--</tr>-->
+                          <!--</tbody>-->
+                          <!--</table>-->
+                          <!--</div>-->
+                          <!--</div>-->
+                      </div>
+                  </div>
+              </div>
+          </div>
+</body>
+<script src="./javascript/plugins/xcaroa_plugincore.js"></script>
+<script type="text/javascript">
+    seajs.config({
+        timeout:20000,
+        charset: 'utf-8',
+        debug:true
+    })
+    seajs.use("./javascript/activity/caidan_pageInit")
+</script>
+</html>

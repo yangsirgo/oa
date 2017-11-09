@@ -1,0 +1,138 @@
+.ct-ly-tips{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.ct-ly-conts{
+    color:red;
+}
+
+.tcenter {
+    text-align: center;
+}
+.ct-ly-btn.ct-confirm:hover {
+    background-color: #0e7df5;
+}
+.col-blue {
+    background: #539be9;
+    color: #fff;
+}
+.ct-ly-btn {
+    color: #fff;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    border-radius: 4px;
+    /* border: 1px solid #c5c5c5; */
+    width: 94px;
+    text-align: center;
+    margin: 0px 5px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.ct-ly-msg {
+    font-size: 16px;
+}
+
+.approveDialogTitle {
+    border-bottom: 2px solid #539be9;
+    height: 40px!important;
+    line-height: 37px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding-left: 15px;
+}
+.apdlbox {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.approveDialogTitle .ad_title {
+    position: absolute;
+    left: 10px;
+    display: block;
+}
+.approveDialogTitle .ad_close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #BFBFBF;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 28px;
+}
+.apdlbox .apdlbox_row {
+    overflow: hidden;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+.apdlbox .apdlbox_row {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.apdlbox .apdlbox_row_title {
+    text-align: left;
+    padding-right: 5px;
+    float: left;
+    line-height: 36px;
+    width: 60px;
+}
+.apdlbox .apdlbox_row_con {
+    text-align: left;
+    float: left;
+}
+.span_advice_mustinputtag {
+    color: Red;
+    display: none;
+}
+.dftgraycolor {
+    color: #999;
+}
+.app_pubprocess_content_text_advice {
+    height: 80px;
+    display: block;
+}
+.apdlbox .apdlbox_row_con textarea {
+    padding: 5px;
+    width: 390px!important;
+}
+.com_center_delete_confirm:hover, .ct_confirm_btn:hover {
+    background-color: #2f8cef;
+}
+a:hover {
+    cursor: pointer;
+}
+.com_center_delete_confirm, .com_center_delete_concel, .ct_confirm_btn, .ct_cancel_btn {
+    background-color: #539be9;
+    color: #fff;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    vertical-align: -1px;
+    padding: 0 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.com_center_delete_concel, .ct_cancel_btn {
+    background-color: #bfbfbf;
+}
+.apdlbox .apdlbox_row_title {
+    text-align: left;
+    padding-right: 5px;
+    float: left;
+    line-height: 36px;
+    width: 60px;
+}
+.com_center_delete_concel:hover, .ct_cancel_btn:hover {
+    background-color: #b3b3b3;
+}

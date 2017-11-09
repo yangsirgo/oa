@@ -1,0 +1,32 @@
+
+span.li-nav-finacial-auth {
+    color: black;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    display: block;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    float: right;
+    border: 1px solid #D3D6D9;
+}
+
+.SettintargetRelat{
+    position: relative;
+}
+.SettintargetRelat .Settintarget {
+    position: absolute;
+    top: -43px;
+    right: 0px;
+}
+.SettintargetRelat .Settinpass {
+    position: absolute;
+    top: -43px;
+    right: 156px;
+}
+.SettintargetRelat .SettingpackBtn{
+    position: absolute;
+    top: -43px;
+    left: -100px;
+}

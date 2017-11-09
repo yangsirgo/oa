@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/ui.css">
+    <link rel="stylesheet" href="css/input_alert.css">
+</head>
+
+<body>
+<button class="btn">普通弹窗</button>
+<br />
+<button class="ipt_btn">可输入的弹窗</button>
+</body>
+<script type="text/html" id="tpl">
+
+</script>
+<script src="./javascript/plugins/xcaroa_plugincore.js"></script>
+<script type="text/javascript">
+    seajs.config({
+        timeout: 20000,
+        charset: 'utf-8',
+        debug: true
+    })
+    seajs.use("./javascript/test");
+</script>
+</html>

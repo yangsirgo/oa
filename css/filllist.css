@@ -1,0 +1,24 @@
+
+/*����button*/
+#content-size-OA .bottom-btn .set-first-btn{
+    margin-left: 380px;
+    margin-top: 20px;color: #ffffff;
+}
+
+#content-size-OA .bottom-btn {
+    width: 1165px;
+    margin-bottom: 42px;
+    margin-top: 42px;
+    /*margin-left: 480px;*/
+    /*text-align: center;*/
+}
+
+.process .person-tabs li {
+    width: 102px;
+}
+
+.amount_num{
+    border: 0;
+    text-align: center;
+    font-size: 14px;
+}

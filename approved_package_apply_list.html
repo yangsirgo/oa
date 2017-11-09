@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+    <!-- HTTP 1.1 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- HTTP 1.0 -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <!-- Prevent caching at the proxy server -->
+    <meta http-equiv="expires" content="0">
+    <title>爱卡汽车OA系统--我的申请</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/myapplication.css"/>
+    <link rel="stylesheet" href="./css/datepick.css"/>
+    <link rel="stylesheet" href="./css/tabs.css"/>
+    <link rel="stylesheet" href="./css/shenpi.css"/>
+    <link rel="stylesheet" href="./css/pagination.css"/>
+    <link rel="stylesheet" href="./css/barTop.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <meta charset="UTF-8">
+    <style>
+        /*设置datepicker的相对位置*/
+        .ui-datepicker {
+            margin-top: 46px;
+            z-index: 1000;
+        }
+        /*20.40span等点击样式*/
+        .span-block span.click_span{
+            background-color: #539BE9;!important;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <div class="app-header">
+            <a href="./index.html" class="fz22 logo-link tcenter">爱卡OA系统</a>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">返回首页</a>
+                    </li>
+                    <li class="user-name">
+                        <a href="javascript:avoid(0)" class="li_a"><span class="person_name">韩寒</span><i class="user-pic"></i></a>
+                        <div class="my-system-menu">
+                            <div class="my-system-posi"></div>
+                            <a href="./modifyPassWord.html"><i class="sp-menu-hd3"></i>密码修改</a>
+                            <a href="./login.html"><i class="sp-menu-hd5"></i>退出</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="set-menu fl">
+        <div class="header-menu">
+            <p class="fz16 cs">自定义菜单</p>
+            <span></span>
+        </div>
+        <div>
+            <ul id="js_left_menu" class="set-menu-ul">
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="set-page-mbx">
+            <span class="set-page-title">当前位置：首页<span style="font-family: 'microsoft yahei'">&nbsp;&gt;&nbsp;</span>已审批<span style="font-family: 'microsoft yahei'">&nbsp;&gt;&nbsp;</span>已锁定-文件夹<span id="batchCode"></span></span>
+        </div>
+        <div id="content-size-OA">
+            <div class="process">
+                <span class="pass-name">已锁定</span>
+                <div class="myapplycation-info">
+                    <form name="queryForm" id="queryForm" action="#" method="post">
+                        <div class="find_line_div">
+                            <span class="first_span">申请类型</span><select id="area_id1" data-value="">
+                            <option value="0">财务类</option>
+                        </select>
+                            <!--<span>申请名称</span><select id="area_id2" name="area_id" data-value=""><option value="0">差旅费</option><option value="1">业务招待费</option><option value="2">通讯费</option><option value="3">餐费</option></select>-->
+                            <span class="s-t">审批状态</span><select id="floor_id1" data-value="">
+                            <option value="1">已审批</option>
+                        </select>
+                            <span>申请人</span><input type="text" name="applyApplyUserName"/>
+                            <span class="bianhao">编号</span><input type="text" name="applyCode"/>
+                            <div>
+                                <span class="first_span">申请日期</span><input name="applyTimeStartStr" type="text"
+                                                                           id="datepicker">-<input
+                                    name="applyTimeEndStr" type="text" id="datepicker1">
+                                <span>审批日期</span><input name="approvedTimeStartStr" type="text" id="datepicker2">-<input name="approvedTimeEndStr" type="text" id="datepicker3">
+                                <button type="button" class="find_button" name="findBtn">查询</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        <TABLE id="table" class="myapplycation-info-table" cellSpacing=0 border=1 borderColor=#E4E5E7>
+                            <thead>
+                            <TR class="first_tr_title">
+                                <td class="w-20 first_td_child">
+                                    <span class="design-bg-icons3 app-checkbox"></span>
+                                </td>
+                                <TD class="second_td_child">
+                                    <DIV align=left>编号</DIV></TD>
+                                <TD class="even-td perc-14">
+                                    <DIV align=center>审批状态</DIV></TD>
+                                <TD class="odd-td perc-14">
+                                    <DIV align=center>申请人</DIV></TD>
+                                <TD class="even-td perc-14">
+                                    <DIV align=center>申请日期</DIV></TD>
+                                <TD class="even-td perc-14">
+                                    <DIV align=center>审批日期</DIV></TD>
+                                <TD class="odd-td">
+                                    <DIV align=center>操作</DIV></TD>
+                            </TR>
+                            </thead>
+                            <tbody class="table_body">
+                            <tr>
+                                <td align="center" colspan="6">
+                                    <div class="list-loading">正在加载......</div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </TABLE>
+                    </div>
+                    <div class="pagi_line">
+                        <div class="span-block" name="pageSize" style="float:left;">
+                            <span class="span-num click_span">10</span>
+                            <span class="span-num">20</span>
+                            <span class="span-num">30</span>
+                            <span class="span-num">60</span>
+                        </div>
+                        <div class="div_pagination" style="float:right;">
+                            <p>共<span id="totalCount">0</span>条记录</p>
+
+                            <div class="pagination">
+                                <div class="cutepage">
+                                    <a isend="false" class="disabled prev">上一页</a>
+                                    <a isend="false" class="selected">1</a>
+                                    <a isend="false" class="next">下一页</a>
+                                    <input type="text" class="jumpnum">
+                                    <a class="jumpbtn">跳转</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="javascript/plugins/xcaroa_plugincore.js"></script>
+<script src="javascript/plugins/fw_pagination.js"></script>
+<script>
+    seajs.config({
+        timeout:20000,
+        charset: 'utf-8',
+        debug:true
+    })
+    seajs.use("./javascript/activity/approvedPackageApplyList",function() {
+        $('#batchCode').text(_urlParamToJson(window.location.href,'batchCode'));
+    });
+</script>
+</html>

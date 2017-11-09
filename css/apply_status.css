@@ -1,0 +1,12 @@
+.process-tableline{
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-top: 10px;
+}
+
+#processImg{
+    float: left;
+    position: relative;
+    left: -50%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head >
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1">
+  <!-- HTTP 1.1 -->
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- HTTP 1.0 -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <!-- Prevent caching at the proxy server -->
+  <meta http-equiv="expires" content="0">
+  <title>登录页</title>
+  <link href="./css/login.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<style type="text/css">
+  /*
+  从IE 10开始，type="text" 的 input 在用户输入内容后，会自动产生一个小叉叉（X），方便用户点击清除已经输入的文本
+对于type="password"的 input 则会在右方显示一个小眼睛的图标，占击这个图标可以显示已经输入的内容。
+大多数情况下，为了和其他浏览器呈现相同的效果，需要将input文本输入框右方的X给去掉，将密码输入框右边的小眼睛也给去掉。
+只要使用以下CSS代码可轻松实现隐藏IE浏览器自带的文本删除按钮和密码查看按钮。
+  */
+  ::-ms-clear, ::-ms-reveal{display: none;}
+  /*button.disabled {*/
+    /*background-color: #CCC !important;*/
+  /*}*/
+</style>
+</head>
+<body>
+<div>
+  <div class="frame">
+    <!--<form method="post" action="/auth/login" class="login_conbox" id="form1">-->
+      <ul>
+        <li>
+          <p class="title">爱卡OA系统 </p>
+        </li>
+        <li class="input">
+          <i class="before staff" style="visibility: visible;"></i>
+          <input type="text" id="user_number" class="code sta" placeholder="员工编号"/>
+          <i class="del" style="visibility: hidden;"></i>
+        </li>
+        <li class="input">
+          <i class="before pw" style="visibility: visible;"></i>
+          <input type="password" id="user_password" class="code psw" placeholder="密&emsp;&emsp;码"/>
+          <i class="del" style="visibility: hidden;"></i>
+        </li>
+        <li>
+          <button  id="submitBtn" class="sub">登&emsp;&emsp;录</button>
+        </li>
+      </ul>
+      <div class="bottom">
+        <span style="margin-bottom:15px;"><font id="resultFront" color="red"></font></span>
+        <!--<a href="javascript:" class="tips">忘记密码</a>-->
+      </div>
+    <!--</form>-->
+  </div>
+</div>
+<script type="text/javascript" src="javascript/plugins/xcaroa_plugincore.js"></script>
+<script type="text/javascript">
+  seajs.config({
+    charset: 'utf-8',
+    debug:true
+  })
+  seajs.use("./javascript/activity/login")
+</script>
+</body>
+</html>
